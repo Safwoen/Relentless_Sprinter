@@ -13,6 +13,9 @@ class AEndless_SprinterCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Movement")
+    bool bCanMove;
+
 	/** Camera boom positioning the camera behind the character */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class USpringArmComponent* CameraBoom;
@@ -40,7 +43,7 @@ class AEndless_SprinterCharacter : public ACharacter
 public:
 	AEndless_SprinterCharacter();
 	
-
+	
 protected:
 
 	/** Called for movement input */
