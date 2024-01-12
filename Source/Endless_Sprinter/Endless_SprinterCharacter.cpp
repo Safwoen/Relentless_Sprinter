@@ -16,6 +16,9 @@
 
 AEndless_SprinterCharacter::AEndless_SprinterCharacter()
 {
+
+	// Set the default value
+	   bCanMove = true;
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 		
